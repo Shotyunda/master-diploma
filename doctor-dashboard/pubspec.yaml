@@ -1,0 +1,58 @@
+name: doctor
+description: An example project for flutter-desktop-embedding.
+
+version: 0.1.0
+
+environment:
+  sdk: '>=2.3.0 <3.0.0'
+  # The example interacts with build scripts on the Flutter side that are not
+  # yet stable, so it requires a very recent version of Flutter.
+  # This version will increase regularly as the build scripts change.
+  flutter: '>=1.10.2-pre.54'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.12.0+2
+  flutter_dotenv: 2.0.3
+  auto_size_text: 2.1.0
+  intl: 0.16.0
+  flutter_datetime_picker: 1.2.8
+  bloc: ^2.0.0
+  flutter_bloc: 2.0.1
+  equatable: ^0.6.0
+  outline_material_icons: 0.1.1
+  flutter_masked_text: 0.8.0
+  collection: 1.14.11
+  charts_flutter: 0.8.1
+  shared_preferences: 0.5.4+8
+  enum_to_string: 1.0.8
+  socket_io_client: 0.9.7+1
+
+  cupertino_icons: ^0.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  # See https://github.com/flutter/flutter/wiki/Desktop-shells#fonts
+  fonts:
+    - family: Circe
+      fonts:
+        - asset: assets/fonts/Circe-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Circe-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Circe-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Circe-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Circe-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/Circe-ExtraBold.ttf
+          weight: 900
+  assets:
+    - .env
